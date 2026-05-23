@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "story": "Story",
+    "concepts": "Concepts",
+    "products": "Products",
+    "research": "Research",
+    "partners": "Partners",
+    "shop": "Shop",
+    "admin": "Admin",
+    "login": "Login",
+    "logout": "Logout"
+  },
+  "hero": {
+    "tagline": "Reinventing the restaurant experience,\nfrom Paris to Ulaanbaatar.",
+    "sub": "Premium restaurant objects. Culinary concepts. Street food to fine dining.",
+    "cta": "Discover",
+    "partner_cta": "Become a partner"
+  },
+  "story": {
+    "title": "Bold's Story",
+    "p1": "Born in Mongolia, raised in Paris. Khuselbold Amartuvshin grew up between two worlds — the steppes of Central Asia and the bistros of the 18th arrondissement. This duality shapes his vision: a borderless gastronomy, rooted in excellence and authenticity.",
+    "p2": "Years spent in the kitchens and dining rooms of Paris's finest establishments gave him total mastery of the restaurant chain — from concept to plate, furniture to front-of-house. Bold Design is that expertise distilled into objects and concepts.",
+    "p3": "Today, he creates premium tabletop accessories, develops innovative restaurant concepts, and carries the ambition to export this know-how to his ancestral land: Mongolia.",
+    "quote": "\"Every object in a restaurant tells a story. I want that story to be beautiful.\"",
+    "mission_title": "The Mission",
+    "mission": "Improve every dimension of the restaurant experience — the object, the space, the service, the food — through design and innovation.",
+    "mongolia_title": "Mongolia at Heart",
+    "mongolia": "Bold doesn't only dream Paris. He carries the project of transforming the Mongolian gastronomic scene, bringing Parisian standards from street food to haute cuisine."
+  },
+  "concepts": {
+    "title": "Culinary Concepts",
+    "sub": "From street to star — every concept answers a real need.",
+    "street": {
+      "title": "Street Food",
+      "desc": "Mongolian street recipes revisited with Parisian techniques. Fast, flavourful, authentic."
+    },
+    "bistro": {
+      "title": "Modern Bistro",
+      "desc": "The Parisian bistro reinvented. Short menu, local produce, warm atmosphere."
+    },
+    "foodtruck": {
+      "title": "Food Truck",
+      "desc": "Premium mobile dining. Design, menu, experience — all built for movement."
+    },
+    "gastro": {
+      "title": "Gastronomy",
+      "desc": "Fine dining with a soul. Steppe flavours meet French rigour."
+    },
+    "mongolia": {
+      "title": "Mongolia Project",
+      "desc": "Importing Parisian standards to Ulaanbaatar. Restaurants, training, turnkey concepts."
+    },
+    "contact_concept": "Discuss a concept"
+  },
+  "products": {
+    "title": "Bold Design Products",
+    "sub": "Objects built to last — functional and beautiful. For professional dining.",
+    "materials": "Materials List",
+    "materiels_list": [
+      "Design ashtray",
+      "Olive / nut bowl (60mm with saucer)",
+      "Candle glass with interior wax tray",
+      "Sugar glass — cut 50/25/25",
+      "Glass tea and coffee cups",
+      "Beer glass 25cl and 50cl",
+      "Tap beer drip tray system",
+      "Welcome desk furniture",
+      "Rolling furniture units (446×1232mm and 504×1562mm)",
+      "Rectangular stainless steel change tray with clip",
+      "Design bill presenter"
+    ],
+    "in_dev": "In development",
+    "view_research": "View research"
+  },
+  "research": {
+    "title": "Research & Development",
+    "sub": "Product scouting, inspiration, and development of new object concepts.",
+    "items": {
+      "wood_geek": {
+        "title": "Wood Geek Store",
+        "desc": "Research on premium wooden table accessories."
+      },
+      "walmart_hardwood": {
+        "title": "Walmart Round Hard Wood",
+        "desc": "Analysis of round wood references for dining."
+      },
+      "ramasse_monnaie": {
+        "title": "Change Tray",
+        "desc": "Rectangular stainless steel change tray with clip — hellopro reference."
+      },
+      "porte_addition": {
+        "title": "Bill Presenter",
+        "desc": "Design and functionality of the professional bill presenter."
+      }
+    }
+  },
+  "partners": {
+    "title": "Become a Partner",
+    "sub": "Bold Design seeks visionary partners to co-develop products, concepts and markets.",
+    "why_title": "Why partner with Bold?",
+    "why": [
+      "Ground-level expertise in Parisian dining (street food to gastronomy)",
+      "Access to the developing Mongolian market",
+      "Custom restaurant object design",
+      "Strong network in Parisian nightlife and gastronomy"
+    ],
+    "looking_for": "We're looking for",
+    "looking": [
+      "Investors for restaurant concepts",
+      "Furniture and accessories manufacturers",
+      "Technology partners (POS, ordering, management)",
+      "Distributors and importers in Mongolia",
+      "Interior designers and architects"
+    ],
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company / Organisation",
+      "type": "Partnership type",
+      "message": "Your message",
+      "submit": "Send my request",
+      "success": "Thank you! We'll get back to you within 48h.",
+      "error": "An error occurred. Please try again.",
+      "types": [
+        "Investment",
+        "Manufacturing",
+        "Distribution",
+        "Technology",
+        "Design",
+        "Other"
+      ]
+    }
+  },
+  "shop": {
+    "title": "The Shop",
+    "sub": "Bold Design merch. 3D objects. Capsule collections.",
+    "merch_title": "Merch & Apparel",
+    "merch_desc": "Eco-responsible collections, produced with TPOP (French printing, zero plastic, GOTS certified).",
+    "3d_title": "3D & CNC Objects",
+    "3d_desc": "Prototypes and unique pieces produced with Sculpteo (Paris). Recyclable nylon, local printing.",
+    "coming_soon": "Coming soon",
+    "notify": "Notify me",
+    "notify_email": "Your email",
+    "notify_success": "You'll be notified at launch!"
+  },
+  "footer": {
+    "tagline": "Bold Design — Paris × Mongolia",
+    "rights": "All rights reserved",
+    "contact": "Contact",
+    "email": "boldamar@hotmail.fr"
+  },
+  "auth": {
+    "title": "Admin Access",
+    "sub": "Enter your email to receive a login link.",
+    "email": "Email",
+    "submit": "Send link",
+    "success": "Link sent! Check your inbox.",
+    "error": "Email not authorised.",
+    "back": "Back to site"
+  }
+}

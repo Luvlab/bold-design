@@ -1,0 +1,161 @@
+{
+  "nav": {
+    "story": "Histoire",
+    "concepts": "Concepts",
+    "products": "Produits",
+    "research": "Recherche",
+    "partners": "Partenaires",
+    "shop": "Boutique",
+    "admin": "Admin",
+    "login": "Connexion",
+    "logout": "Déconnexion"
+  },
+  "hero": {
+    "tagline": "Réinventer la restauration,\nde Paris à Oulan-Bator.",
+    "sub": "Design d'objets haut de gamme pour la restauration. Concepts culinaires. Rue, bistrots, gastronomie.",
+    "cta": "Découvrir",
+    "partner_cta": "Devenir partenaire"
+  },
+  "story": {
+    "title": "L'Histoire de Bold",
+    "p1": "Né en Mongolie, élevé à Paris. Khuselbold Amartuvshin a grandi entre deux mondes — les steppes d'Asie centrale et les bistrots du 18ème arrondissement. Cette dualité forge sa vision : une gastronomie sans frontières, ancrée dans l'exigence et l'authenticité.",
+    "p2": "Des années passées dans les cuisines et les salles des meilleurs établissements parisiens lui ont donné une maîtrise totale de la chaîne restauration — du concept à l'assiette, du mobilier à l'accueil. Bold Design, c'est cette expertise condensée en objets et en concepts.",
+    "p3": "Aujourd'hui, il crée des accessoires de table haut de gamme, développe des concepts de restauration innovants, et porte l'ambition d'exporter ce savoir-faire dans sa terre ancestrale : la Mongolie.",
+    "quote": "\"Chaque objet dans un restaurant raconte une histoire. Je veux que cette histoire soit belle.\"",
+    "mission_title": "La Mission",
+    "mission": "Améliorer chaque dimension de l'expérience restaurant — l'objet, l'espace, le service, la nourriture — par le design et l'innovation.",
+    "mongolia_title": "La Mongolie en Cœur",
+    "mongolia": "Bold ne rêve pas seulement Paris. Il porte le projet de transformer la scène gastronomique mongole, en y apportant les standards parisiens de la cuisine de rue à la haute gastronomie."
+  },
+  "concepts": {
+    "title": "Concepts Culinaires",
+    "sub": "De la rue à l'étoile — chaque concept est une réponse à un besoin réel.",
+    "street": {
+      "title": "Street Food",
+      "desc": "Des recettes de rue mongoles revisitées avec les techniques parisiennes. Fast, savoureux, authentique."
+    },
+    "bistro": {
+      "title": "Bistrot Moderne",
+      "desc": "Le bistrot parisien réinventé. Carte courte, produits locaux, atmosphère chaleureuse."
+    },
+    "foodtruck": {
+      "title": "Food Truck",
+      "desc": "La restauration mobile haut de gamme. Design, menu, expérience — tout pensé pour le mouvement."
+    },
+    "gastro": {
+      "title": "Gastronomie",
+      "desc": "Fine dining avec une âme. Les saveurs de la steppe rencontrent la rigueur française."
+    },
+    "mongolia": {
+      "title": "Projet Mongolie",
+      "desc": "Importer les standards parisiens à Oulan-Bator. Restaurants, formations, concepts clé-en-main."
+    },
+    "contact_concept": "Discuter d'un concept"
+  },
+  "products": {
+    "title": "Produits Bold Design",
+    "sub": "Des objets conçus pour durer, fonctionnels et esthétiques. Pour la restauration professionnelle.",
+    "materials": "Liste Matériels",
+    "materiels_list": [
+      "Cendrier design",
+      "Bol olives / cacahouètes (60mm avec sous-tasse)",
+      "Verre à bougie avec réceptoire de cire intérieur",
+      "Verre à sucre — Coupé 50/25/25",
+      "Tasse thé et café en verre",
+      "Verre bière 25cl et 50cl",
+      "Système réceptoire verre sous le bouche bière à pression",
+      "Meuble accueil",
+      "Meubles sur roulettes (446×1232mm et 504×1562mm)",
+      "Ramasse-monnaie inox rectangulaire avec clip",
+      "Porte-addition design"
+    ],
+    "in_dev": "En développement",
+    "view_research": "Voir la recherche"
+  },
+  "research": {
+    "title": "Recherche & Développement",
+    "sub": "Veille produit, inspiration, et développement de nouveaux concepts d'objets.",
+    "items": {
+      "wood_geek": {
+        "title": "Wood Geek Store",
+        "desc": "Recherche sur les accessoires de table en bois haut de gamme."
+      },
+      "walmart_hardwood": {
+        "title": "Walmart Round Hard Wood",
+        "desc": "Analyse de références bois rondes pour la restauration."
+      },
+      "ramasse_monnaie": {
+        "title": "Ramasse Monnaie",
+        "desc": "Coupelle ramasse-monnaie inox rectangulaire avec clip — référence hellopro."
+      },
+      "porte_addition": {
+        "title": "Porte Addition",
+        "desc": "Design et fonctionnalité du porte-addition professionnel."
+      }
+    }
+  },
+  "partners": {
+    "title": "Devenir Partenaire",
+    "sub": "Bold Design cherche des partenaires visionnaires pour co-développer produits, concepts et marchés.",
+    "why_title": "Pourquoi s'associer avec Bold ?",
+    "why": [
+      "Expertise terrain en restauration parisienne (de la rue à la gastronomie)",
+      "Accès au marché mongol en développement",
+      "Design d'objets sur-mesure pour la restauration",
+      "Réseau solide dans la nuit et la gastronomie parisienne"
+    ],
+    "looking_for": "Nous cherchons",
+    "looking": [
+      "Investisseurs pour concepts de restauration",
+      "Fabricants de mobilier et accessoires",
+      "Partenaires technologiques (POS, commande, gestion)",
+      "Distributeurs et importateurs en Mongolie",
+      "Designers et architectes d'intérieur"
+    ],
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "company": "Entreprise / Organisation",
+      "type": "Type de partenariat",
+      "message": "Votre message",
+      "submit": "Envoyer ma demande",
+      "success": "Merci ! Nous reviendrons vers vous sous 48h.",
+      "error": "Une erreur s'est produite. Réessayez.",
+      "types": [
+        "Investissement",
+        "Fabrication",
+        "Distribution",
+        "Technologie",
+        "Design",
+        "Autre"
+      ]
+    }
+  },
+  "shop": {
+    "title": "La Boutique",
+    "sub": "Merch Bold Design. Objets 3D. Collections capsules.",
+    "merch_title": "Merch & Vêtements",
+    "merch_desc": "Collections éco-responsables, produites avec TPOP (impression française, zéro plastique, certifiée GOTS).",
+    "3d_title": "Objets 3D & CNC",
+    "3d_desc": "Prototypes et pièces uniques produits avec Sculpteo (Paris). Nylon recyclable, impression locale.",
+    "coming_soon": "Bientôt disponible",
+    "notify": "Me notifier",
+    "notify_email": "Votre email",
+    "notify_success": "Vous serez notifié(e) au lancement !"
+  },
+  "footer": {
+    "tagline": "Bold Design — Paris × Mongolie",
+    "rights": "Tous droits réservés",
+    "contact": "Contact",
+    "email": "boldamar@hotmail.fr"
+  },
+  "auth": {
+    "title": "Accès Admin",
+    "sub": "Entrez votre email pour recevoir un lien de connexion.",
+    "email": "Email",
+    "submit": "Envoyer le lien",
+    "success": "Lien envoyé ! Vérifiez votre boîte mail.",
+    "error": "Email non autorisé.",
+    "back": "Retour au site"
+  }
+}
