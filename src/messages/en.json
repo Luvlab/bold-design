@@ -157,5 +157,20 @@
     "success": "Link sent! Check your inbox.",
     "error": "Email not authorised.",
     "back": "Back to site"
+  },
+  "admin": {
+    "title": "Inhouse Studio",
+    "sub": "Dev projects, restaurant concepts and design work — private workspace.",
+    "tabs": {
+      "dev": "Dev Projects",
+      "concepts": "Concepts",
+      "design": "Design"
+    },
+    "dev_desc": "Inhouse Bold Design — software & digital products in development",
+    "concepts_desc": "Gastronomic concepts from street food to fine dining — Paris × Mongolia",
+    "design_desc": "Premium restaurant objects — from concept to production",
+    "add_project": "Add project",
+    "featured": "Featured",
+    "inhouse": "Inhouse Bold Design"
   }
 }

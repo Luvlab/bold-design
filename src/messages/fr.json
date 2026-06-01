@@ -157,5 +157,20 @@
     "success": "Lien envoyé ! Vérifiez votre boîte mail.",
     "error": "Email non autorisé.",
     "back": "Retour au site"
+  },
+  "admin": {
+    "title": "Studio Interne",
+    "sub": "Projets dev, concepts restauration et design — espace de travail privé.",
+    "tabs": {
+      "dev": "Projets Dev",
+      "concepts": "Concepts",
+      "design": "Design"
+    },
+    "dev_desc": "Inhouse Bold Design — logiciels & produits numériques en développement",
+    "concepts_desc": "Concepts gastronomiques du street food à la fine cuisine — Paris × Mongolie",
+    "design_desc": "Objets de restaurant premium — du concept à la production",
+    "add_project": "Ajouter un projet",
+    "featured": "Mis en avant",
+    "inhouse": "Inhouse Bold Design"
   }
 }
