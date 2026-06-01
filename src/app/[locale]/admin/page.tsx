@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, type ReactNode } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import {
   Globe, Code2, Lightbulb, Palette, Plus, ExternalLink,
@@ -368,7 +368,7 @@ export default function AdminPage() {
     setShowAddForm(false);
   }
 
-  const TABS: { key: AdminTab; label: string; icon: React.ReactNode; count: number }[] = [
+  const TABS: { key: AdminTab; label: string; icon: ReactNode; count: number }[] = [
     { key: 'dev',      label: 'Dev Projects',  icon: <Code2 size={15} />,    count: inhouseProjects.filter(p => p.category === 'dev').length },
     { key: 'concepts', label: 'Concepts',       icon: <Lightbulb size={15} />, count: concepts.length },
     { key: 'design',   label: 'Design',         icon: <Palette size={15} />,  count: products.length },

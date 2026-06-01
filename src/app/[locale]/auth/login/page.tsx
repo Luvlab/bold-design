@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { createClient } from '@/lib/supabase/client';
-import { ArrowLeft, Lock, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 const ALLOWED_EMAILS = [
   'boldamar@hotmail.fr',
@@ -40,93 +40,151 @@ export default function LoginPage() {
       });
 
       if (error) {
-        // For first-time users, try with creation
         const { error: error2 } = await supabase.auth.signInWithOtp({
           email: normalised,
-          options: {
-            emailRedirectTo: `${window.location.origin}/auth/callback`,
-          },
+          options: { emailRedirectTo: `${window.location.origin}/auth/callback` },
         });
         if (error2) throw error2;
       }
       setStatus('success');
-    } catch (err: any) {
+    } catch (err: unknown) {
       setStatus('error');
-      setErrorMsg(err?.message || t('error'));
+      setErrorMsg(err instanceof Error ? err.message : t('error'));
     }
   };
 
   return (
-    <div className="min-h-screen bg-bold-dark flex items-center justify-center px-4">
-      <div className="w-full max-w-sm">
+    <div className="min-h-screen bg-bold-dark flex flex-col">
 
-        {/* Logo */}
-        <div className="flex items-center justify-center mb-10">
-          <div className="w-12 h-12 relative">
-            <div className="absolute inset-0 bg-bold-gold rounded-sm" />
-            <div className="absolute inset-[3px] bg-bold-dark rounded-sm flex items-center justify-center">
-              <span className="text-bold-gold font-black text-xl">B</span>
+      {/* Decorative background */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden">
+        {/* Gold radial glow bottom-left */}
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full"
+          style={{ background: 'radial-gradient(circle, rgba(201,162,86,0.08) 0%, transparent 70%)' }} />
+        {/* Red radial glow top-right */}
+        <div className="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full"
+          style={{ background: 'radial-gradient(circle, rgba(196,30,58,0.07) 0%, transparent 70%)' }} />
+        {/* Mongolian diagonal stripe pattern */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-[0.03]"
+          style={{
+            backgroundImage: `repeating-linear-gradient(
+              45deg,
+              #C9A256 0px, #C9A256 1px,
+              transparent 1px, transparent 24px
+            )`,
+          }}
+        />
+      </div>
+
+      {/* Main content */}
+      <div className="flex-1 flex items-center justify-center px-4 py-16 relative z-10">
+        <div className="w-full max-w-sm">
+
+          {/* Wordmark */}
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-3 mb-4">
+              {/* Bold "B" logo */}
+              <div className="w-14 h-14 relative flex-shrink-0">
+                <div className="absolute inset-0 bg-bold-gold rounded-sm" />
+                <div className="absolute inset-[3px] bg-bold-dark rounded-sm flex items-center justify-center">
+                  <span className="text-bold-gold font-black text-2xl tracking-tighter">B</span>
+                </div>
+              </div>
+              <div className="text-left">
+                <div className="text-bold-light font-black text-xl tracking-wider uppercase leading-none">Bold</div>
+                <div className="text-bold-muted text-[10px] uppercase tracking-[0.3em] mt-0.5">Design Studio</div>
+              </div>
             </div>
+            <div className="w-8 h-[1px] bg-bold-gold mx-auto mb-4" />
+            <p className="text-bold-muted text-xs uppercase tracking-[0.2em]">Paris × Ulaanbaatar</p>
           </div>
-        </div>
 
-        <div className="bold-card rounded-sm p-8">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-10 h-10 bg-bold-gold/10 rounded-sm flex items-center justify-center">
-              <Lock size={18} className="text-bold-gold" />
-            </div>
-            <div>
-              <h1 className="text-bold-light font-semibold">{t('title')}</h1>
-              <p className="text-bold-muted text-xs">{t('sub')}</p>
-            </div>
-          </div>
+          {/* Card */}
+          <div className="bold-card rounded-sm overflow-hidden">
 
-          {status === 'success' ? (
-            <div className="text-center py-6">
-              <CheckCircle size={40} className="text-bold-gold mx-auto mb-4" />
-              <p className="text-bold-light font-medium mb-1">{t('success')}</p>
-              <p className="text-bold-muted text-xs mt-2">{email}</p>
-            </div>
-          ) : (
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label className="text-[10px] uppercase tracking-widest text-bold-muted block mb-2">
-                  {t('email')}
-                </label>
-                <input
-                  type="email" required
-                  value={email} onChange={e => setEmail(e.target.value)}
-                  className="w-full bg-bold-darker border border-bold-border rounded-sm px-4 py-3 text-sm text-bold-light
-                    placeholder:text-bold-muted/40 focus:outline-none focus:border-bold-gold transition-colors"
-                  placeholder="boldamar@hotmail.fr"
-                />
+            {/* Card top stripe */}
+            <div className="h-[2px] bg-gradient-to-r from-bold-gold via-bold-gold/60 to-transparent" />
+
+            <div className="p-8">
+              <div className="mb-7">
+                <h1 className="text-bold-light font-bold text-lg tracking-wide mb-1">{t('title')}</h1>
+                <p className="text-bold-muted text-xs leading-relaxed">{t('sub')}</p>
               </div>
 
-              {status === 'error' && (
-                <div className="flex items-center gap-2 text-sm text-red-400">
-                  <AlertCircle size={14} />
-                  {errorMsg}
+              {status === 'success' ? (
+                <div className="text-center py-8 space-y-4">
+                  <div className="w-14 h-14 mx-auto bg-bold-gold/10 rounded-sm flex items-center justify-center">
+                    <CheckCircle size={28} className="text-bold-gold" />
+                  </div>
+                  <div>
+                    <p className="text-bold-light font-semibold text-sm mb-1">{t('success')}</p>
+                    <p className="text-bold-muted text-xs">{email}</p>
+                  </div>
+                  <p className="text-bold-muted text-[10px] uppercase tracking-wider opacity-60">
+                    Check your inbox · Vérifiez votre boîte · Имэйлээ шалгана уу
+                  </p>
                 </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-5">
+                  <div>
+                    <label className="text-[10px] uppercase tracking-[0.15em] text-bold-muted block mb-2">
+                      {t('email')}
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      autoFocus
+                      value={email}
+                      onChange={e => setEmail(e.target.value)}
+                      className="w-full bg-bold-darker border border-bold-border rounded-sm px-4 py-3 text-sm
+                        text-bold-light placeholder:text-bold-muted/30 focus:outline-none
+                        focus:border-bold-gold transition-colors duration-200"
+                      placeholder="boldamar@hotmail.fr"
+                    />
+                  </div>
+
+                  {status === 'error' && (
+                    <div className="flex items-center gap-2 text-xs text-red-400 bg-red-500/5 border border-red-500/20 rounded-sm px-3 py-2.5">
+                      <AlertCircle size={13} className="flex-shrink-0" />
+                      {errorMsg}
+                    </div>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={status === 'loading'}
+                    className="w-full flex items-center justify-center gap-2.5 px-6 py-3.5
+                      bg-bold-gold text-bold-dark font-bold text-xs uppercase tracking-[0.15em]
+                      rounded-sm hover:bg-bold-gold-light transition-colors duration-200
+                      disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {status === 'loading' ? (
+                      <span className="inline-block w-4 h-4 border-2 border-bold-dark/30 border-t-bold-dark rounded-full animate-spin" />
+                    ) : (
+                      <Send size={13} />
+                    )}
+                    {status === 'loading' ? '...' : t('submit')}
+                  </button>
+                </form>
               )}
+            </div>
+          </div>
 
-              <button
-                type="submit" disabled={status === 'loading'}
-                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-bold-gold text-bold-dark
-                  font-semibold text-sm uppercase tracking-wider rounded-sm hover:bg-bold-gold-light
-                  transition-colors disabled:opacity-50"
-              >
-                <Send size={14} />
-                {status === 'loading' ? '...' : t('submit')}
-              </button>
-            </form>
-          )}
-        </div>
+          {/* Back link */}
+          <div className="mt-7 text-center">
+            <a
+              href="/"
+              className="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] text-bold-muted hover:text-bold-gold transition-colors duration-200"
+            >
+              <ArrowLeft size={11} />
+              {t('back')}
+            </a>
+          </div>
 
-        <div className="mt-6 text-center">
-          <a href="/" className="flex items-center justify-center gap-2 text-xs text-bold-muted hover:text-bold-gold transition-colors">
-            <ArrowLeft size={12} />
-            {t('back')}
-          </a>
+          {/* Tagline */}
+          <p className="text-center text-[9px] uppercase tracking-[0.25em] text-bold-muted/40 mt-8">
+            Bold Design © {new Date().getFullYear()}
+          </p>
         </div>
       </div>
     </div>
